@@ -1,12 +1,9 @@
-require("dotenv").config();
+require('dotenv').config();
 const {
   Client,
   IntentsBitField,
-  ApplicationCommandOptionType,
-  EmbedBuilder,
-  ActivityType,
 } = require("discord.js");
-const eventHandler = require("./handlers/eventHandler");
+const eventHandler = require('./handlers/eventHandler');
 
 const client = new Client({
   intents: [
